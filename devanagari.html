@@ -31,7 +31,7 @@
             layout:"devanagari",
             customLayout: {
                'default': [
-               '{accept} {space} {bksp} ',
+               '{accept} {space} {bksp} {enter}',
                   '० १ २ ३ ४ ५ ६ ७ ८ ९   । ॥',
                   'क ख ग घ ङ   ्     अ आ  इ ई ',
                   'च छ ज झ ञ   ऽ    उ ऊ  ए ऐ ',
@@ -45,6 +45,13 @@
 		});
    </script>
 
+   <style type="text/css">
+      body,textarea,input { 
+         font-family: Mangal;
+         font-size: 20px
+      }
+   </style>
+
 </head>
 
 <body>
@@ -55,10 +62,10 @@
 	</div>
 	End Links -->
 
-	<div id="wrap"> <!-- wrapper only needed to center the input -->
+	<div id="wrap" style="width: 400px; height: 200px;"> <!-- wrapper only needed to center the input -->
 
 		<!-- keyboard input -->
-		<input id="keyboard" type="text">
+      <textarea id="keyboard" type="text"></textarea>
 
 	</div> <!-- End wrapper -->
 
